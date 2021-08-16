@@ -1,16 +1,26 @@
-# bindpod-web
+# bindpod-web   bindpod前端功能实现
 
-## Project setup
+## 依赖模块安装
 ```
 yarn install
 ```
 
-### Compiles and hot-reloads for development
+### 修改后端服务地址 config.js文件, 修改api变量
+```shell
+const config = {
+    api: "http://192.168.50.69:8000",
+    timeout: 3000
+}
+
+export default config
+```
+
+### 开发环境启动
 ```
 yarn serve
 ```
 
-### Compiles and minifies for production
+### 编译文件, 编译后的文件在dist文件中，放入nginx中可以正常访问
 ```
 yarn build
 ```
