@@ -186,8 +186,6 @@ export default {
       if (value === "MX") {
         this.analysisForm.name = "@"
         this.analysisForm.mx = 50
-      } else {
-        this.$refs.form.resetFields()
       }
     },
     resolveList() {
